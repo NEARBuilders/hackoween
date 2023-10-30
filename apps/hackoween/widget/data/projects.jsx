@@ -118,10 +118,15 @@ const projects = [
       name: "Trailblazer",
       description:
         "Green Ghouls UrbanTech: Haunt the Grid for a Sustainable Tomorrow",
-      image: {},
-      backgroundImage: {},
+      image: {
+        href: "https://taikai.azureedge.net/EGxAjvBypX_NZhIlKd8QQ3rhP6kLQpHzqk_T7kEE7qI/rs:fit:350:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83N2YyZmFjMC03NWJmLTExZWUtYmUzNy1lMzUzMzQxOTE4MTNGcmVlIFNpbXBsZSBNb2Rlcm4gQ2lyY2xlIERlc2lnbiBTdHVkaW8gTG9nbyAoMikucG5n"
+      },
+      backgroundImage: {
+        href: "https://taikai.azureedge.net/WdFLHInDu7rAV_yMohA9n6y4cS730-HNe3UUG8VCA_w/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83Mzk1NmQwMC03NWJmLTExZWUtYmVlMi1iZDM1NjE1ZjhjY2JuYXNhLVExcDdiaDNTSGo4LXVuc3BsYXNoLmpwZw"
+      },
       linktree: {
-        nearsocial: "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=spencer8.near&blockHeight=104404068",
+        nearsocial:
+          "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=spencer8.near&blockHeight=104404068",
         notion:
           "https://sly-maple-1dd.notion.site/Green-Ghouls-UrbanTech-Haunt-the-Grid-for-a-Sustainable-Tomorrow-20962fd3286d40bbacb709607cd3575d",
       },
@@ -246,8 +251,12 @@ const projects = [
     metadata: {
       name: "WatchNY",
       description: "",
-      image: {},
-      backgroundImage: {},
+      image: {
+        href: "https://taikai.azureedge.net/y_04JZ1wg9hmaqs1ZGt7hh0PubT4h8QubZV8LpOXX7Y/rs:fit:350:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy8wYmRhNTk1MC03NWJhLTExZWUtYmUzNy1lMzUzMzQxOTE4MTNidWlsZGluZy5wbmc",
+      },
+      backgroundImage: {
+        href: "https://taikai.azureedge.net/_M15qyG97gh9eRMf2qEGJ6Lv5EvhRakRdE1UJepKu9E/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy8wYTliNDlhMC03NWJhLTExZWUtYWNhOC1iMTYxZjY5NmQyZTdXYXRjaCBOWUJHLnBuZw",
+      },
       linktree: {
         taikai:
           "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloa994c000bevm01jktlgcd4/idea",
@@ -293,7 +302,8 @@ const projects = [
       image: {},
       backgroundImage: {},
       linktree: {
-        nearsocial: "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=spencer8.near&blockHeight=104405704",
+        nearsocial:
+          "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=spencer8.near&blockHeight=104405704",
         notion:
           "https://sly-maple-1dd.notion.site/The-Scary-Black-Button-What-the-hack-should-it-do-7c6a14e45e1f426789f294ed25d03faa?pvs=4",
       },
@@ -571,7 +581,7 @@ const projects = [
       },
     },
   },
-  
+
   {
     data: JSON.stringify({
       team: [
