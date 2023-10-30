@@ -1,4 +1,4 @@
-const { items, handleItemClick } = props;
+const { items, handleItemClick, project } = props;
 
 const Container = styled.div`
   height: 100%;
@@ -13,8 +13,10 @@ const StyledItem = styled.div`
   width: 100%;
   margin: 5px 0;
   cursor: pointer;
+  border: 2px solid #6C5F5B; 
+
   &:hover {
-    background-color: var(--base50);
+    background-color: var(--paper);
   }
 `;
 
@@ -37,14 +39,27 @@ const Name = styled.div`
 `;
 
 function normalizeString(str) {
-  return str.toLowerCase().replace(/\s+/g, '-');
+  return str.toLowerCase().replace(/\s+/g, "-");
 }
 
 return (
   <Container>
     {items.map((item, index) => (
-      <Link to={`/hackoween.near/widget/app?project=${normalizeString(item.metadata.name)}`}>
-        <StyledItem key={index} onClick={() => handleItemClick(item)}>
+      <Link
+        to={`/hackoween.near/widget/app?project=${normalizeString(
+          item.metadata.name
+        )}`}
+      >
+        <StyledItem
+          key={index}
+          onClick={() => handleItemClick(item)}
+          style={{
+            backgroundColor:
+              normalizeString(item.metadata.name) === project
+                ? "var(--paper)"
+                : "var(--base100)",
+          }}
+        >
           <ImageWrapper>
             <Image src={item.metadata.image.href} alt={item.metadata.name} />
           </ImageWrapper>

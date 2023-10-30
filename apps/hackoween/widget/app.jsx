@@ -29,6 +29,11 @@ if (!theme) {
 const Root = styled.div`
   ${variables}
   ${theme}
+
+  a {
+    text-decoration: none;
+    color: var(--base900);
+  }
 `;
 
 const Container = styled.div`

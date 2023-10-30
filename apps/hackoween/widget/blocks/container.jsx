@@ -96,7 +96,7 @@ return (
       >
         <Widget
           src="hackoween.near/widget/blocks.sidebar"
-          props={{ handleItemClick, items: projects }}
+          props={{ handleItemClick, items: projects, project }}
         />
       </div>
       <div
