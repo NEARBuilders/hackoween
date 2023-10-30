@@ -160,7 +160,7 @@ const projects = [
       team: [
         "2b125a7ff31e6d270ffcbfd7be46bd83d2d4b6ee036db2478acf3011b712f5e3",
       ],
-      demo: "fcff4038fecb38b0e63ee9e865f363886415006ec9413ea70dbae598207f201c/widget/Map.Mapbox",
+      demo: "fcff4038fecb38b0e63ee9e865f363886415006ec9413ea70dbae598207f201c/widget/NearBi.Mapbox",
       post: {
         type: "social",
         accountId:
