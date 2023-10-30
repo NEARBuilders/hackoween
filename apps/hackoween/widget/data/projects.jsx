@@ -256,7 +256,7 @@ const projects = [
         href: "https://taikai.azureedge.net/_M15qyG97gh9eRMf2qEGJ6Lv5EvhRakRdE1UJepKu9E/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy8wYTliNDlhMC03NWJhLTExZWUtYWNhOC1iMTYxZjY5NmQyZTdXYXRjaCBOWUJHLnBuZw",
       },
       linktree: {
-        nearsocial: "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=taein.near&blockHeight=104549075"
+        nearsocial: "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=taein.near&blockHeight=104549075",
         taikai:
           "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloa994c000bevm01jktlgcd4/idea",
       },
