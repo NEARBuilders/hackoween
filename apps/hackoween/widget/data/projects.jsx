@@ -119,10 +119,10 @@ const projects = [
       description:
         "Green Ghouls UrbanTech: Haunt the Grid for a Sustainable Tomorrow",
       image: {
-        href: "https://taikai.azureedge.net/EGxAjvBypX_NZhIlKd8QQ3rhP6kLQpHzqk_T7kEE7qI/rs:fit:350:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83N2YyZmFjMC03NWJmLTExZWUtYmUzNy1lMzUzMzQxOTE4MTNGcmVlIFNpbXBsZSBNb2Rlcm4gQ2lyY2xlIERlc2lnbiBTdHVkaW8gTG9nbyAoMikucG5n"
+        href: "https://taikai.azureedge.net/EGxAjvBypX_NZhIlKd8QQ3rhP6kLQpHzqk_T7kEE7qI/rs:fit:350:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83N2YyZmFjMC03NWJmLTExZWUtYmUzNy1lMzUzMzQxOTE4MTNGcmVlIFNpbXBsZSBNb2Rlcm4gQ2lyY2xlIERlc2lnbiBTdHVkaW8gTG9nbyAoMikucG5n",
       },
       backgroundImage: {
-        href: "https://taikai.azureedge.net/WdFLHInDu7rAV_yMohA9n6y4cS730-HNe3UUG8VCA_w/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83Mzk1NmQwMC03NWJmLTExZWUtYmVlMi1iZDM1NjE1ZjhjY2JuYXNhLVExcDdiaDNTSGo4LXVuc3BsYXNoLmpwZw"
+        href: "https://taikai.azureedge.net/WdFLHInDu7rAV_yMohA9n6y4cS730-HNe3UUG8VCA_w/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy83Mzk1NmQwMC03NWJmLTExZWUtYmVlMi1iZDM1NjE1ZjhjY2JuYXNhLVExcDdiaDNTSGo4LXVuc3BsYXNoLmpwZw",
       },
       linktree: {
         nearsocial:
@@ -238,13 +238,7 @@ const projects = [
   },
   {
     data: JSON.stringify({
-      team: [
-        "Taein Um",
-        "Yongjung Shin",
-        "Juyoung Yun",
-        "Joseph Seo",
-        "taein.near",
-      ],
+      team: ["taein.near", "Yongjung Shin", "Juyoung Yun", "Joseph Seo"],
       demo: "",
       post: {},
     }),
@@ -260,6 +254,27 @@ const projects = [
       linktree: {
         taikai:
           "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloa994c000bevm01jktlgcd4/idea",
+      },
+    },
+  },
+  {
+    data: JSON.stringify({
+      team: ["taein.near", "Yongjung Shin", "Juyoung Yun", "Joseph Seo"],
+      demo: "taein.near/widget/AI-Governance",
+      post: {
+        type: "social",
+        accountId: "taein.near",
+        blockHeight: 104397244,
+      },
+    }),
+    metadata: {
+      name: "WatchNY",
+      description: "",
+      image: {},
+      backgroundImage: {},
+      linktree: {
+        nearsocial:
+          "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=taein.near&blockHeight=104397244",
       },
     },
   },
