@@ -87,7 +87,7 @@ return (
     </ButtonRow>
     <Content>
       {activeView === "post" && (
-        <PostContent data={JSON.parse(selectedItem.data).post} />
+        <PostContent data={JSON.parse(selectedItem.data).post } />
       )}
       {activeView === "demo" && (
         <Widget src={JSON.parse(selectedItem.data).demo} />

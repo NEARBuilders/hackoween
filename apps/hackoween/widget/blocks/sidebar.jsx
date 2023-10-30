@@ -36,10 +36,14 @@ const Name = styled.div`
   align-self: center;
 `;
 
+function normalizeString(str) {
+  return str.toLowerCase().replace(/\s+/g, '-');
+}
+
 return (
   <Container>
     {items.map((item, index) => (
-      <Link to={`/hackoween.near/widget/app?project=${item.metadata.name}`}>
+      <Link to={`/hackoween.near/widget/app?project=${normalizeString(item.metadata.name)}`}>
         <StyledItem key={index} onClick={() => handleItemClick(item)}>
           <ImageWrapper>
             <Image src={item.metadata.image.href} alt={item.metadata.name} />

@@ -1,4 +1,3 @@
-
 const InnerContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -60,11 +59,17 @@ function Header() {
   );
 }
 
-const { projects } = props;
+const { projects, project } = props;
+
+
+function normalizeString(str) {
+  return str.toLowerCase().replace(/\s+/g, '-');
+}
+
 
 let initialProject = projects[0];
 if (project) {
-  initialProject = projects.find((p) => p.metadata.name === project);
+  initialProject = projects.find((p) => normalizeString(p.metadata.name) === project);
 }
 
 const [selectedItem, setSelectedItem] = useState(initialProject);

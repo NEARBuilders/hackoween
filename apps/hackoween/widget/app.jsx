@@ -1,7 +1,5 @@
 const project = props.project;
 
-const projects = VM.require("hackoween.near/widget/data.projects") || [];
-
 let theme = props.theme;
 let variables = props.variables;
 
@@ -46,8 +44,18 @@ return (
   <Root>
     <Container>
       <Widget
-        src="hackoween.near/widget/blocks.container"
-        props={{ projects }}
+        src="hackoween.near/widget/providers.project"
+        props={{
+          project,
+          children: (p) => {
+            return (
+              <Widget
+                src="hackoween.near/widget/blocks.container"
+                props={{ ...p, project }}
+              />
+            );
+          },
+        }}
       />
     </Container>
   </Root>
