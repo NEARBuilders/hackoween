@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: |
-          bw build
+          npm run build
 
       - name: Install bos CLI
         run: |
