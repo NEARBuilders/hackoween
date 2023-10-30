@@ -30,7 +30,7 @@ const projects = [
   {
     data: JSON.stringify({
       team: ["puzzle0.near"],
-      demo: "",
+      demo: "puzzle0.near/widget/Counter",
       post: {
         type: "social",
         accountId: "puzzle0.near",
