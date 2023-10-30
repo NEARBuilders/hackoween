@@ -268,7 +268,7 @@ const projects = [
       },
     }),
     metadata: {
-      name: "WatchNY",
+      name: "EdgeWeb: AI Governance Platform",
       description: "",
       image: {},
       backgroundImage: {},
