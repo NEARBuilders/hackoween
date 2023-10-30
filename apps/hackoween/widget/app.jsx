@@ -1,3 +1,7 @@
+const project = props.project;
+
+const projects = VM.require("hackoween.near/widget/data.projects") || [];
+
 let theme = props.theme;
 let variables = props.variables;
 
@@ -38,80 +42,13 @@ const Container = styled.div`
   background-color: var(--base950);
 `;
 
-const InnerContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 0.375);
-  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  background-color: var(--paper);
-  padding: 20px;
-
-  @media (min-width: 768px) {
-    width: 80%;
-    height: 80%;
-    overflow: hidden;
-  }
-`;
-const [selectedItem, setSelectedItem] = useState(null);
-
-const handleItemClick = (item) => {
-  setSelectedItem(item);
-};
-const StyledHeader = styled.div`
-  margin: 10px 20px 0 20px;
-`;
-
-const Title = styled.div`
-  margin: 0;
-  font-size: 3em;
-  font-weight: bold;
-`;
-
-function Header() {
-  return (
-    <StyledHeader>
-      <Title>Hack-o-ween</Title>
-    </StyledHeader>
-  );
-}
 return (
   <Root>
     <Container>
-      <InnerContainer>
-        <Header />
-        <div
-          className="template"
-          style={{ display: "flex", width: "100%", height: "100%" }}
-        >
-          <div
-            className="left-panel"
-            style={{
-              flex: 1,
-              maxWidth: "300px",
-              width: "100%",
-              margin: "20px 20px 80px 20px",
-            }}
-          >
-            <Widget
-              src="hackoween.near/widget/blocks.sidebar"
-              props={{ handleItemClick }}
-            />
-          </div>
-          <div
-            className="right-panel"
-            style={{ flex: 1, width: 0, height: "80vh", overflow: "scroll" }}
-          >
-            <Widget
-              src="hackoween.near/widget/blocks.content"
-              props={{ selectedItem }}
-            />
-          </div>
-        </div>
-      </InnerContainer>
+      <Widget
+        src="hackoween.near/widget/blocks.container"
+        props={{ projects }}
+      />
     </Container>
   </Root>
 );

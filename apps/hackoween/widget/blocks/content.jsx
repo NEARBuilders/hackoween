@@ -37,6 +37,7 @@ const Content = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
+  padding-bottom: 40px;
   background: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
