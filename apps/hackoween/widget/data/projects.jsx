@@ -647,6 +647,27 @@ const projects = [
       },
     },
   },
+  {
+    data: JSON.stringify({
+      team: ["imagin.near"],
+      demo: "imagin.near/widget/NICEcards",
+      post: {
+        type: "social",
+        accountId: "imagin.near",
+        blockHeight: 104405629
+      },
+    }),
+    metadata: {
+      name: "Network Intelligence Card Environment (NICE)",
+      description: "",
+      image: {},
+      backgroundImage: {},
+      linktree: {
+        nearsocial:
+          "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=imagin.near&blockHeight=104405629",
+      },
+    },
+  },
 ];
 
 return projects;
