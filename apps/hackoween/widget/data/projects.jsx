@@ -212,7 +212,7 @@ const projects = [
   {
     data: JSON.stringify({
       team: ["byalbert.near", "Angie"],
-      demo: "byalbert.near/widget/RatSightings",
+      demo: "byalbert.near/widget/RatSightingsUpdated",
       post: {
         type: "social",
         accountId: "byalbert.near",
