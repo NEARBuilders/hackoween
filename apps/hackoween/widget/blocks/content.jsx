@@ -139,13 +139,16 @@ const StyledPre = styled.pre`
   white-space: pre-wrap;
 `;
 
+
 const formatPrizes = (prizes) => {
-  return prizes.tracks
-    .map(
-      (track) =>
-        `${getEmojiForPrize(track.name)} ${track.name}: $${track.amount}`
-    )
-    .join("\n");
+  const prizeLines = prizes.tracks.map((track) => 
+    `${getEmojiForPrize(track.name)} ${track.name}: $${track.amount}`
+  );
+
+  const totalAmount = prizes.tracks.reduce((total, track) => total + parseInt(track.amount, 10), 0);
+  prizeLines.push(`Total: $${totalAmount}`);
+
+  return prizeLines.join('\n');
 };
 
 const TextPost = ({ data, metadata }) => {
@@ -172,10 +175,10 @@ const TextPost = ({ data, metadata }) => {
         Copy to clipboard
       </button>
       <StyledPre>
-        **Team**: {team}
-        **Prizes**:
-        {prizesText}
-        **Near Social Post**: {nearSocialPost}
+**Team**: {team}
+**Prizes**:
+{prizesText}
+**Near Social Post**: {nearSocialPost}
       </StyledPre>
     </>
   );
