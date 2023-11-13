@@ -89,6 +89,97 @@ function PostContent({ data }) {
   );
 }
 
+const PrizeContainer = styled.div`
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+`;
+
+const PrizeItem = styled.div`
+  margin: 10px 0;
+  font-size: 16px;
+`;
+
+const TotalItem = styled.div`
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+const getEmojiForPrize = (name) => {
+  switch (name) {
+    case "Grand Prize":
+      return "🏆";
+    case "Build City":
+      return "🏙️";
+    case "Data Citizens":
+      return "👥";
+    case "Runner Up":
+      return "🥈";
+    case "Green Blocks":
+      return "♻️"; // Sustainability emoji
+    case "Everything":
+      return "⚫"; // Black dot emoji
+    case "EdgeAI":
+      return "🤖";
+    case "Builders Badge":
+      return "🛠️";
+    default:
+      return "🎁";
+  }
+};
+
+function PrizesContent({ data }) {
+  if (!data.tracks) {
+    return <h3>No Prizes Won</h3>;
+  }
+
+  const totalAmount =
+    data.tracks.length &&
+    data.tracks.reduce((total, track) => total + parseInt(track.amount, 10), 0);
+  return (
+    <div key={JSON.stringify(data)}>
+      {data.tracks.length && (
+        <PrizeContainer>
+          {data.tracks.map((track) => (
+            <PrizeItem key={track.name}>
+              {getEmojiForPrize(track.name)} {track.name}: ${track.amount}
+            </PrizeItem>
+          ))}
+          <TotalItem>Total: ${totalAmount}</TotalItem>
+        </PrizeContainer>
+      )}
+      {data.postId ? (
+        <Widget
+          src="devhub.near/widget/devhub.entity.post.Post"
+          props={{ id: data.postId }}
+          loading={<div style={{ height: "200px" }} />}
+        />
+      ) : (
+        totalAmount !== 0 && (
+          <p>
+            No post found. Reply to the following{" "}
+            <a
+              href="https://near.social/devhub.near/widget/app?page=post&id=1485"
+              target="_blank"
+              style={{ color: "blue", textDecoration: "underline" }}
+            >
+              Original Hackathon Proposal Post
+            </a>{" "}
+            as a "Solution" with the name of your team/projects, your prizes,
+            the bounties associated, and a link to your NEAR Social Post. All
+            this information is in the Hack-o-ween Prize Breakdown listed in
+            point 1 so copy your section/row from there. Once this is done, the
+            NEAR DevHub team will be getting in touch with you to remit your
+            payments.
+          </p>
+        )
+      )}
+    </div>
+  );
+}
+
 if (!selectedItem) {
   return <></>;
 }
@@ -98,7 +189,10 @@ return (
     <Header>
       <Logo>
         <ImageWrapper>
-          <Image src={selectedItem.metadata.image.href} alt={selectedItem.metadata.name} />
+          <Image
+            src={selectedItem.metadata.image.href}
+            alt={selectedItem.metadata.name}
+          />
         </ImageWrapper>
         <Name>{selectedItem.metadata.name}</Name>
       </Logo>
@@ -116,6 +210,12 @@ return (
           Demo
         </Button>
         <Button
+          onClick={() => setActiveView("prizes")}
+          className={activeView === "prizes" ? "active" : ""}
+        >
+          Prizes
+        </Button>
+        <Button
           onClick={() => setActiveView("data")}
           className={activeView === "data" ? "active" : ""}
         >
@@ -129,6 +229,9 @@ return (
       )}
       {activeView === "demo" && (
         <Widget src={JSON.parse(selectedItem.data).demo} />
+      )}
+      {activeView === "prizes" && (
+        <PrizesContent data={JSON.parse(selectedItem.data).prizes} />
       )}
       {activeView === "data" && (
         <pre>{JSON.stringify(selectedItem, null, 2)}</pre>

@@ -8,6 +8,14 @@ const projects = [
         accountId: "ajluc.near",
         blockHeight: 104402167,
       },
+      prizes: {
+        postId: 2019,
+        tracks: [
+          { name: "Grand Prize", amount: "1000" },
+          { name: "Build City", amount: "100" },
+          { name: "Data Citizens", amount: "250" },
+        ],
+      },
     }),
     metadata: {
       name: "AfforDWELL",
@@ -20,10 +28,9 @@ const projects = [
       },
       linktree: {
         taikai:
-          "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloa994c000bevm01jktlgcd4/idea",
+          "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloabm7nu00e9xk01286t9vfa/idea",
         nearsocial:
           "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=ajluc.near&blockHeight=104402167",
-        github: "https://github.com/yongshn220/WatchNY_frontend/",
       },
     },
   },
@@ -35,6 +42,12 @@ const projects = [
         type: "social",
         accountId: "puzzle0.near",
         blockHeight: 104402605,
+      },
+      prizes: {
+        tracks: [
+          { name: "Runner Up", amount: "500" },
+          { name: "Build City", amount: "100" },
+        ],
       },
     }),
     metadata: {
@@ -56,6 +69,10 @@ const projects = [
         type: "social",
         accountId: "spencer8.near",
         blockHeight: 104403394,
+      },
+      prizes: {
+        postId: 1984,
+        tracks: [{ name: "EdgeAI", amount: "300" }],
       },
     }),
     metadata: {
@@ -86,6 +103,10 @@ const projects = [
         accountId: "spencer8.near",
         blockHeight: 104403821,
       },
+      prizes: {
+        postId: 1984,
+        tracks: [{ name: "Build City", amount: "100" }],
+      },
     }),
     metadata: {
       name: "DonorTrust",
@@ -112,6 +133,10 @@ const projects = [
         type: "social",
         accountId: "spencer8.near",
         blockHeight: 104404068,
+      },
+      prizes: {
+        postId: 1984,
+        tracks: [{ name: "Green Blocks", amount: "500" }],
       },
     }),
     metadata: {
@@ -141,6 +166,13 @@ const projects = [
         accountId: "annabnn812.near",
         blockHeight: 104403807,
       },
+      prizes: {
+        postId: 1992,
+        tracks: [
+          { name: "Build City", amount: "200" },
+          { name: "EdgeAI", amount: "50" },
+        ],
+      },
     }),
     metadata: {
       name: "Be Nice New Yorker",
@@ -166,6 +198,15 @@ const projects = [
         accountId:
           "2b125a7ff31e6d270ffcbfd7be46bd83d2d4b6ee036db2478acf3011b712f5e3",
         blockHeight: 104397544,
+      },
+      prizes: {
+        postId: 1989,
+        tracks: [
+          { name: "Grand Prize", amount: "1000" },
+          { name: "Build City", amount: "100" },
+          { name: "Green Blocks", amount: "250" },
+          { name: "Data Citizens", amount: "250" },
+        ],
       },
     }),
     metadata: {
@@ -196,6 +237,13 @@ const projects = [
         accountId: "nearjordan.near",
         blockHeight: 104398162,
       },
+      prizes: {
+        postId: 1991,
+        tracks: [
+          { name: "Data Citizens", amount: "250" },
+          { name: "EdgeAI", amount: "150" },
+        ],
+      },
     }),
     metadata: {
       name: "Ask New York City 311",
@@ -217,6 +265,14 @@ const projects = [
         type: "social",
         accountId: "byalbert.near",
         blockHeight: 104404038,
+      },
+      prizes: {
+        postId: 1990,
+        tracks: [
+          { name: "Runner Up", amount: "500" },
+          { name: "Data Citizens", amount: "250" },
+          { name: "Green Blocks", amount: "100" },
+        ],
       },
     }),
     metadata: {
@@ -256,7 +312,8 @@ const projects = [
         href: "https://taikai.azureedge.net/_M15qyG97gh9eRMf2qEGJ6Lv5EvhRakRdE1UJepKu9E/rs:fit:1920:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy8wYTliNDlhMC03NWJhLTExZWUtYWNhOC1iMTYxZjY5NmQyZTdXYXRjaCBOWUJHLnBuZw",
       },
       linktree: {
-        nearsocial: "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=taein.near&blockHeight=104549075",
+        nearsocial:
+          "https://near.social/mob.near/widget/MainPage.N.Post.Page?accountId=taein.near&blockHeight=104549075",
         taikai:
           "https://taikai.network/hackbox/hackathons/HackoweenCivicTech/projects/cloa994c000bevm01jktlgcd4/idea",
       },
@@ -293,6 +350,11 @@ const projects = [
           "819c44a1bdd666dce2119a6e92f9d7643136e02fc577e6cd0542bb38f6172b4a",
         blockHeight: 104414928,
       },
+      prizes: {
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
+      },
     }),
     metadata: {
       name: "Poll.ai",
@@ -314,6 +376,10 @@ const projects = [
         type: "social",
         accountId: "spencer8.near",
         blockHeight: 104405704,
+      },
+      prizes: {
+        postId: 1984,
+        tracks: [{ name: "Everything", amount: "200" }],
       },
     }),
     metadata: {
@@ -339,6 +405,11 @@ const projects = [
           "819c44a1bdd666dce2119a6e92f9d7643136e02fc577e6cd0542bb38f6172b4a",
         blockHeight: 104404885,
       },
+      prizes: {
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
+      },
     }),
     metadata: {
       name: "Build City Bounty on Liora",
@@ -359,6 +430,13 @@ const projects = [
         type: "social",
         accountId: "isayahc.near",
         blockHeight: 104404071,
+      },
+      prizes: {
+        postId: 2031,
+        tracks: [
+          { name: "Build City", amount: "200" },
+          { name: "EdgeAI", amount: "50" },
+        ],
       },
     }),
     metadata: {
@@ -382,6 +460,11 @@ const projects = [
         accountId: "lynkable.near",
         blockHeight: 104403595,
       },
+      prizes: {
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
+      },
     }),
     metadata: {
       name: "Platform to Connect Community Centers with Artists and Youth",
@@ -403,6 +486,11 @@ const projects = [
         accountId: "lynkable.near",
         blockHeight: 104402860,
       },
+      prizes: {
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
+      },
     }),
     metadata: {
       name: "Blockchain Education for Community Service Hours",
@@ -423,6 +511,13 @@ const projects = [
         type: "social",
         accountId: "raycent.near",
         blockHeight: 104402461,
+      },
+      prizes: {
+        postId: 2020,
+        tracks: [
+          { name: "Everything", amount: 500 },
+          { name: "EdgeAI", amount: 100 },
+        ],
       },
     }),
     metadata: {
@@ -450,6 +545,12 @@ const projects = [
         type: "social",
         accountId: "taein.near",
         blockHeight: 104396453,
+      },
+      prizes: {
+        postId: 1983,
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
       },
     }),
     metadata: {
@@ -480,6 +581,12 @@ const projects = [
         accountId: "taein.near",
         blockHeight: 104395699,
       },
+      prizes: {
+        postId: 1983,
+        tracks: [
+          { name: "Data Citizens", amount: "250" },
+        ],
+      },
     }),
     metadata: {
       name: "Car Accidents History",
@@ -507,6 +614,13 @@ const projects = [
         accountId: "taein.near",
         blockHeight: 104395000,
       },
+      prizes: {
+        postId: 1983,
+        tracks: [
+          { name: "Data Citizens", amount: "250" },
+          { name: "Green Blocks", amount: "150" },
+        ],
+      },
     }),
     metadata: {
       name: "Carbon Footprint Map",
@@ -533,6 +647,12 @@ const projects = [
         type: "social",
         accountId: "taein.near",
         blockHeight: 104374387,
+      },
+      prizes: {
+        postId: 1983,
+        tracks: [
+          { name: "Everything", amount: "300" },
+        ],
       },
     }),
     metadata: {
@@ -562,6 +682,11 @@ const projects = [
         accountId: "jjays0n.near",
         blockHeight: 104359001,
       },
+      prizes: {
+        tracks: [
+          { name: "Build City", amount: "100" },
+        ],
+      },
     }),
     metadata: {
       name: "WasteRevive NYC",
@@ -582,6 +707,14 @@ const projects = [
         type: "social",
         accountId: "ranjan-026.near",
         blockHeight: 104352405,
+      },
+      prizes: {
+        postId: 1988,
+        tracks: [
+          { name: "Runner Up", amount: "500" },
+          { name: "Build City", amount: "100" },
+          { name: "EdgeAI", amount: "100" },
+        ],
       },
     }),
     metadata: {
@@ -614,6 +747,11 @@ const projects = [
           "819c44a1bdd666dce2119a6e92f9d7643136e02fc577e6cd0542bb38f6172b4a",
         blockHeight: 104344362,
       },
+      prizes: {
+        tracks: [
+          { name: "Builders Badge", amount: 0 },
+        ],
+      },
     }),
     metadata: {
       name: "Housing, Transportation, and Urban Development",
@@ -635,6 +773,11 @@ const projects = [
         accountId: "navneets.near",
         blockHeight: 104287352,
       },
+      prizes: {
+        tracks: [
+          { name: "Builders Badge", amount: 0 },
+        ],
+      },
     }),
     metadata: {
       name: "My Profile",
@@ -654,7 +797,7 @@ const projects = [
       post: {
         type: "social",
         accountId: "imagin.near",
-        blockHeight: 104405629
+        blockHeight: 104405629,
       },
     }),
     metadata: {
